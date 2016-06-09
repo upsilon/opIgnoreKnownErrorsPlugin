@@ -1,0 +1,131 @@
+- # symfony 1.4.16 で修正済み: http://trac.symfony-project.org/ticket/9970
+  errno: E_WARNING
+  errstr: "ob_start(): function '' not found or invalid function name"
+  errfile: lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php
+  errline: 155 # sfApplicationConfiguration::initConfiguration()
+
+- # symfony 1.4.16 で修正済み: http://trac.symfony-project.org/ticket/9970
+  errno: E_NOTICE
+  errstr: "ob_start(): failed to create buffer"
+  errfile: lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php
+  errline: 155 # sfApplicationConfiguration::initConfiguration()
+
+- # symfony 1.4.17 で修正済み: http://trac.symfony-project.org/ticket/9985
+  errno: E_NOTICE
+  errstr: "Array to string conversion"
+  errfile: lib/vendor/symfony/lib/widget/sfWidgetFormSelectCheckbox.class.php
+  errline: 105 # sfWidgetFormSelectCheckbox::formatChoices()
+
+- # パッチ: https://github.com/rezzza/doctrine1/commit/0b838e2e5b2dcb055623e72258d9f4bdfca04f23
+  errno: E_NOTICE
+  errstr: "Array to string conversion"
+  errfile: lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine/Query/Abstract.php
+  errline: 1152 # Doctrine_Query_Abstract::_getDqlCallbackComponents()
+
+- # パッチ: https://github.com/LExpress/symfony1/commit/b90e1254f5208f8666491cf27392a22d38860131
+  errno: E_DEPRECATED
+  errstr: "preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead"
+  errfile: lib/vendor/symfony/lib/util/sfToolkit.class.php
+  errline: 362 # sfToolkit::pregtr()
+
+- # パッチ: https://github.com/LExpress/symfony1/commit/b90e1254f5208f8666491cf27392a22d38860131
+  errno: E_DEPRECATED
+  errstr: "preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead"
+  errfile: lib/vendor/symfony/lib/command/sfCommandManager.class.php
+  errline: 111 # sfCommandManager::process()
+
+- # パッチ: https://github.com/LExpress/symfony1/commit/b90e1254f5208f8666491cf27392a22d38860131
+  errno: E_DEPRECATED
+  errstr: "preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead"
+  errfile: lib/vendor/symfony/lib/response/sfWebResponse.class.php
+  errline: 409 # sfWebResponse::normalizeHeaderName()
+
+- # パッチ: https://github.com/LExpress/symfony1/commit/b90e1254f5208f8666491cf27392a22d38860131
+  errno: E_DEPRECATED
+  errstr: "preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead"
+  errfile: cache/<?php $user = posix_getpwuid(posix_getuid()); echo $user['name'] ?>/pc_frontend/test/config/config_core_compile.yml.php
+  errline: ~ # sfWebResponse::normalizeHeaderName()
+
+- # パッチ: https://github.com/LExpress/symfony1/commit/b90e1254f5208f8666491cf27392a22d38860131
+  errno: E_DEPRECATED
+  errstr: "preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead"
+  errfile: lib/vendor/symfony/lib/vendor/lime/lime.php
+  errline: [687, 688, 689, 690] # lime_output::echoln()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::factory() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/util/opMobileUserAgent.class.php
+  errline: 32 # opMobileUserAgent::__construct()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::isDoCoMo() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
+  errline: 144 # Net_UserAgent_Mobile::factory()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::isEZweb() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
+  errline: 146 # Net_UserAgent_Mobile::factory()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::isSoftBank() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
+  errline: 148 # Net_UserAgent_Mobile::factory()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::isWillcom() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
+  errline: 150 # Net_UserAgent_Mobile::factory()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method PEAR::staticPushErrorHandling() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
+  errline: 170 # Net_UserAgent_Mobile::factory()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method PEAR::isError() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile/Common.php
+  errline: 140 # Net_UserAgent_Mobile_Common::Net_UserAgent_Mobile_Common()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method PEAR::staticPopErrorHandling() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
+  errline: 172 # Net_UserAgent_Mobile::factory()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::isError() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
+  errline: 174 # Net_UserAgent_Mobile::factory()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::isError() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile/DoCoMo.php
+  errline: 605 # Net_UserAgent_Mobile_DoCoMo::parse()
+
+- # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
+  errno: E_DEPRECATED
+  errstr: "Non-static method Net_UserAgent_Mobile::isError() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Net/UserAgent/Mobile/SoftBank.php
+  errline: 215 # Net_UserAgent_Mobile_SoftBank::parse()
+
+- # 最新の SimplePie では新しい構文に移行されている: https://github.com/simplepie/simplepie
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/simplepie/simplepie.inc
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Function split() is deprecated"
+  errfile: lib/vendor/OAuth/OAuth.php
+  errline: [720, 724] # OAuthUtil::parse_parameters()
