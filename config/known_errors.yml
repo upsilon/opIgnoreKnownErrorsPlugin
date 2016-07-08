@@ -1,3 +1,5 @@
+<?php require_once __DIR__.'/../../../data/version.php' ?>
+
 - # symfony 1.4.16 で修正済み: http://trac.symfony-project.org/ticket/9970
   errno: E_WARNING
   errstr: "ob_start(): function '' not found or invalid function name"
@@ -50,7 +52,11 @@
   errno: E_DEPRECATED
   errstr: "preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead"
   errfile: lib/vendor/symfony/lib/vendor/lime/lime.php
+<?php if (version_compare(OPENPNE_VERSION, '3.5.3', '<')): ?>
   errline: [687, 688, 689, 690] # lime_output::echoln()
+<?php else: ?>
+  errline: [692, 693, 694, 695] # lime_output::echoln()
+<?php endif ?>
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
   errno: E_DEPRECATED
@@ -129,3 +135,165 @@
   errstr: "Function split() is deprecated"
   errfile: lib/vendor/OAuth/OAuth.php
   errline: [720, 724] # OAuthUtil::parse_parameters()
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method Console_Getopt::doGetopt() should not be called statically"
+  errfile: lib/vendor/PEAR/Console/Getopt.php
+  errline: 68
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method PEAR::isError() should not be called statically"
+  errfile: lib/vendor/PEAR/Console/Getopt.php
+  errline: [87, 136]
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method Console_Getopt::_parseShortOption() should not be called statically"
+  errfile: lib/vendor/PEAR/Console/Getopt.php
+  errline: 135
+
+-
+  errno: E_STRICT
+  errstr: "call_user_func_array() expects parameter 1 to be a valid callback, non-static method System::_removeTmpFiles() should not be called statically"
+  errfile: lib/vendor/PEAR/PEAR.php
+  errline: 808
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method Console_Getopt::getopt2() should not be called statically"
+  errfile: lib/vendor/PEAR/System.php
+  errline: 76
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method System::_dirToStruct() should not be called statically"
+  errfile: lib/vendor/PEAR/System.php
+  errline: 171
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method System::_parseArgs() should not be called statically"
+  errfile: lib/vendor/PEAR/System.php
+  errline: 193
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method PEAR::isError() should not be called statically"
+  errfile: lib/vendor/PEAR/System.php
+  errline: 194
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method System::_multipleToStruct() should not be called statically"
+  errfile: lib/vendor/PEAR/System.php
+  errline: 204
+
+-
+  errno: E_STRICT
+  errstr: "Non-static method System::rm() should not be called statically"
+  errfile: lib/vendor/PEAR/System.php
+  errline: 440
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/ChannelFile.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Common.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Command.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Config.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Function set_magic_quotes_runtime() is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Config.php
+  errline: [1026, 1033]
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Dependency2.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/DependencyDB.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Function set_magic_quotes_runtime() is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/DependencyDB.php
+  errline: [554, 581, 583, 558]
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Downloader.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Frontend.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Installer.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/PackageFile/v2.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/PackageFile/v2/Validator.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Registry.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Function set_magic_quotes_runtime() is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/Registry.php
+  errline: [1140, 1144, 1179, 1183]
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/REST/10.php
+  errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/PEAR/REST/11.php
+  errline: ~
