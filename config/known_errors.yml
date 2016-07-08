@@ -1,4 +1,4 @@
-<?php require_once __DIR__.'/../../../data/version.php' ?>
+<?php require_once dirname(__FILE__).'/../../../data/version.php' ?>
 
 - # symfony 1.4.16 で修正済み: http://trac.symfony-project.org/ticket/9970
   errno: E_WARNING
