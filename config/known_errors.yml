@@ -52,7 +52,7 @@
   errno: E_DEPRECATED
   errstr: "preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead"
   errfile: lib/vendor/symfony/lib/vendor/lime/lime.php
-<?php if (version_compare(OPENPNE_VERSION, '3.5.3', '<')): ?>
+<?php if (version_compare(OPENPNE_VERSION, '3.5.3', '<') || OPENPNE_VERSION === '3.9.0-dev'): ?>
   errline: [687, 688, 689, 690] # lime_output::echoln()
 <?php else: ?>
   errline: [692, 693, 694, 695] # lime_output::echoln()
@@ -297,3 +297,21 @@
   errstr: "Assigning the return value of new by reference is deprecated"
   errfile: lib/vendor/PEAR/PEAR/REST/11.php
   errline: ~
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/Calendar/Month/Weekdays.php
+  errline: 132
+
+-
+  errno: E_DEPRECATED
+  errstr: "Assigning the return value of new by reference is deprecated"
+  errfile: lib/vendor/PEAR/Calendar/Calendar.php
+  errline: 460
+
+-
+  errno: E_DEPRECATED
+  errstr: "Non-static method Calendar_Engine_Factory::getEngine() should not be called statically, assuming $this from incompatible context"
+  errfile: lib/vendor/PEAR/Calendar/Calendar.php
+  errline: 210
