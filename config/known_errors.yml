@@ -59,67 +59,67 @@
 <?php endif ?>
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::factory() should not be called statically, assuming $this from incompatible context"
   errfile: lib/util/opMobileUserAgent.class.php
   errline: 32 # opMobileUserAgent::__construct()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::isDoCoMo() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
   errline: 144 # Net_UserAgent_Mobile::factory()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::isEZweb() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
   errline: 146 # Net_UserAgent_Mobile::factory()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::isSoftBank() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
   errline: 148 # Net_UserAgent_Mobile::factory()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::isWillcom() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
   errline: 150 # Net_UserAgent_Mobile::factory()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method PEAR::staticPushErrorHandling() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
   errline: 170 # Net_UserAgent_Mobile::factory()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method PEAR::isError() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile/Common.php
   errline: 140 # Net_UserAgent_Mobile_Common::Net_UserAgent_Mobile_Common()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method PEAR::staticPopErrorHandling() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
   errline: 172 # Net_UserAgent_Mobile::factory()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::isError() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile.php
   errline: 174 # Net_UserAgent_Mobile::factory()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::isError() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile/DoCoMo.php
   errline: 605 # Net_UserAgent_Mobile_DoCoMo::parse()
 
 - # 最新の Net_UserAgent_Mobile は PHP5 に移行されている: https://github.com/iteman/net-useragent-mobile/commit/48d42001ff7f235b8bb8bf5da844abb51b6daeff
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Net_UserAgent_Mobile::isError() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Net/UserAgent/Mobile/SoftBank.php
   errline: 215 # Net_UserAgent_Mobile_SoftBank::parse()
@@ -137,19 +137,19 @@
   errline: [720, 724] # OAuthUtil::parse_parameters()
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Console_Getopt::doGetopt() should not be called statically"
   errfile: lib/vendor/PEAR/Console/Getopt.php
   errline: 68
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method PEAR::isError() should not be called statically"
   errfile: lib/vendor/PEAR/Console/Getopt.php
   errline: [87, 136]
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Console_Getopt::_parseShortOption() should not be called statically"
   errfile: lib/vendor/PEAR/Console/Getopt.php
   errline: 135
@@ -161,31 +161,31 @@
   errline: 808
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Console_Getopt::getopt2() should not be called statically"
   errfile: lib/vendor/PEAR/System.php
   errline: 76
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method System::_dirToStruct() should not be called statically"
   errfile: lib/vendor/PEAR/System.php
   errline: 171
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method System::_parseArgs() should not be called statically"
   errfile: lib/vendor/PEAR/System.php
   errline: 193
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method PEAR::isError() should not be called statically"
   errfile: lib/vendor/PEAR/System.php
   errline: 194
 
 -
-  errno: E_STRICT
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method System::_multipleToStruct() should not be called statically"
   errfile: lib/vendor/PEAR/System.php
   errline: 204
@@ -311,7 +311,7 @@
   errline: 460
 
 -
-  errno: E_DEPRECATED
+  errno: "<?php echo version_compare(PHP_VERSION, '5.6.0', '>=') ? 'E_DEPRECATED' : 'E_STRICT' ?>"
   errstr: "Non-static method Calendar_Engine_Factory::getEngine() should not be called statically, assuming $this from incompatible context"
   errfile: lib/vendor/PEAR/Calendar/Calendar.php
   errline: 210
